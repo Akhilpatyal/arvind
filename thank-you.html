@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="robots" content="noindex, follow" />
+    <meta name="theme-color" content="#101828" />
+    <title>Payment Successful | Master Social Confidence</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body class="thank-you-page">
+    <main class="success-card" aria-labelledby="success-title">
+      <div class="success-mark" aria-hidden="true">✓</div>
+      <h1 id="success-title">Payment Successful!</h1>
+      <p>Thank you for your purchase.</p>
+      <p>Your eBook has been sent to your email.</p>
+
+      <div class="customer-box" aria-label="Customer details">
+        <strong id="customerName">Customer name</strong>
+        <span id="customerEmail">Customer email</span>
+        <span id="orderId">Order ID</span>
+      </div>
+
+      <a class="button primary" href="index.html">Back to landing page</a>
+    </main>
+
+    <script>
+      const purchase = JSON.parse(localStorage.getItem("ebookPurchase") || "{}");
+
+      document.querySelector("#customerName").textContent = purchase.name || "Customer";
+      document.querySelector("#customerEmail").textContent = purchase.email || "Email not found";
+      document.querySelector("#orderId").textContent = purchase.orderId ? `Order ID: ${purchase.orderId}` : "Order ID unavailable";
+
+      if (purchase.status !== "paid") {
+        document.querySelector("#success-title").textContent = "Thank you!";
+      }
+    </script>
+  </body>
+</html>
