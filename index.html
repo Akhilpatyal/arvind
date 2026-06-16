@@ -2,293 +2,608 @@
 <html lang="en">
   <head>
     <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover" />
+    <meta name="theme-color" content="#ffffff" />
+
+    <!-- Primary SEO -->
+    <title>Master Social Confidence — Human Attraction &amp; Communication Guide</title>
     <meta
       name="description"
-      content="Master Social Confidence is a premium eBook program for building confidence, communication skills, social intelligence, charisma, and personal magnetism."
+      content="Master Human Attraction & Communication. Learn proven psychology, confidence-building techniques, communication frameworks, and relationship skills used by socially successful people. Instant download."
     />
-    <meta name="theme-color" content="#101828" />
-    <title>Master Social Confidence | Confidence, Communication & Personal Magnetism</title>
+    <meta name="keywords" content="social confidence, communication skills, attraction psychology, confidence building, conversation skills, body language, relationship skills, ebook" />
+    <meta name="author" content="Master Social Confidence" />
+    <link rel="canonical" href="https://master-social-confidence.example/" />
 
-    <meta property="og:title" content="Master Social Confidence" />
+    <!-- Open Graph -->
+    <meta property="og:type" content="product" />
+    <meta property="og:title" content="Master Human Attraction & Communication" />
     <meta
       property="og:description"
-      content="Stop overthinking conversations and learn the psychology, communication techniques, and confidence habits that help you stand out naturally."
+      content="Proven psychology, confidence frameworks, and communication skills used by socially successful people. Instant access — lifetime availability."
     />
-    <meta property="og:type" content="website" />
+    <meta property="og:image" content="assets/master-social-confidence-cover.png" />
+    <meta property="og:locale" content="en_IN" />
 
+    <!-- Twitter -->
+    <meta name="twitter:card" content="summary_large_image" />
+    <meta name="twitter:title" content="Master Human Attraction & Communication" />
+    <meta name="twitter:description" content="Confidence, communication & attraction psychology — in one practical guide." />
+    <meta name="twitter:image" content="assets/master-social-confidence-cover.png" />
+
+    <!-- Performance -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link rel="preconnect" href="https://checkout.razorpay.com" />
+    <link rel="preload" as="image" href="assets/master-social-confidence-cover.png" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Sora:wght@600;700;800&display=swap"
+      rel="stylesheet"
+    />
     <link rel="stylesheet" href="style.css" />
+
+    <!-- Structured data for SEO / rich results -->
+    <script type="application/ld+json">
+      {
+        "@context": "https://schema.org",
+        "@type": "Product",
+        "name": "Master Social Confidence eBook",
+        "description": "A complete guide to human attraction, confidence, and communication based on proven psychology.",
+        "image": "assets/master-social-confidence-cover.png",
+        "brand": { "@type": "Brand", "name": "Master Social Confidence" },
+        "aggregateRating": {
+          "@type": "AggregateRating",
+          "ratingValue": "4.8",
+          "reviewCount": "10000"
+        },
+        "offers": {
+          "@type": "Offer",
+          "priceCurrency": "INR",
+          "price": "499",
+          "availability": "https://schema.org/InStock"
+        }
+      }
+    </script>
   </head>
 
   <body>
-    <a class="skip-link" href="#purchase">Skip to purchase form</a>
+    <!-- Page loader -->
+    <div class="page-loader" id="pageLoader" aria-hidden="true">
+      <div class="page-loader__spinner"></div>
+    </div>
 
-    <header class="site-header" aria-label="Primary navigation">
-      <nav class="nav">
+    <a class="skip-link" href="#checkout">Skip to checkout</a>
+
+    <!-- Top announcement bar -->
+    <div class="announce" role="status">
+      <span class="announce__dot" aria-hidden="true"></span>
+      Limited launch price — <strong>90% OFF</strong> ends soon
+    </div>
+
+    <!-- Header -->
+    <header class="site-header">
+      <div class="container site-header__inner">
         <a class="brand" href="#top" aria-label="Master Social Confidence home">
-          <span class="brand-mark">MC</span>
-          <span>Master Confidence</span>
+          <span class="brand__mark" aria-hidden="true">MSC</span>
+          <span class="brand__name">Master&nbsp;Social&nbsp;Confidence</span>
         </a>
-        <div class="nav-links" aria-label="Page sections">
-          <a href="#benefits">Benefits</a>
-          <a href="#inside">Inside</a>
+        <nav class="site-nav" aria-label="Primary">
+          <a href="#learn">What you'll learn</a>
           <a href="#proof">Reviews</a>
           <a href="#faq">FAQ</a>
-        </div>
-        <a class="nav-cta" href="#purchase">Get Access</a>
-      </nav>
+        </nav>
+        <a href="#checkout" class="btn btn--ghost btn--sm header-cta">Get Access</a>
+      </div>
     </header>
 
     <main id="top">
-      <section class="hero section-shell">
-        <div class="hero-grid">
-          <div class="hero-copy reveal">
-            <p class="eyebrow">Master social confidence</p>
-            <h1>Build confidence, communication skills, and personal magnetism.</h1>
-            <p class="hero-lede">
-              Stop overthinking every conversation. Learn the psychology,
-              communication techniques, and confidence habits that help you
-              stand out naturally in social, professional, and dating situations.
+      <!-- ============ HERO ============ -->
+      <section class="hero" aria-labelledby="hero-title">
+        <div class="hero__glow" aria-hidden="true"></div>
+        <div class="container hero__grid">
+          <!-- Left -->
+          <div class="hero__left reveal">
+            <span class="badge">🔥 Bestseller Guide</span>
+            <h1 id="hero-title" class="hero__title">
+              Master Human Attraction <span class="text-gradient">&amp; Communication</span>
+            </h1>
+            <p class="hero__sub">
+              Learn proven psychology, confidence-building techniques, communication frameworks, and
+              relationship skills used by socially successful people.
             </p>
 
-            <div class="hero-actions">
-              <a class="button primary" href="#purchase">Get Instant Access for ₹499</a>
-              <a class="button secondary" href="#inside">See What's Inside</a>
+            <ul class="benefits" role="list">
+              <li><span class="benefits__ic" aria-hidden="true">✅</span> Build confidence naturally</li>
+              <li><span class="benefits__ic" aria-hidden="true">✅</span> Improve conversations</li>
+              <li><span class="benefits__ic" aria-hidden="true">✅</span> Create stronger connections</li>
+              <li><span class="benefits__ic" aria-hidden="true">✅</span> Understand attraction psychology</li>
+            </ul>
+
+            <div class="hero__cta-row">
+              <a href="#checkout" class="btn btn--primary btn--lg">Get Instant Access</a>
+              <div class="hero__rating">
+                <span class="stars" aria-hidden="true">★★★★★</span>
+                <span class="hero__rating-text">Trusted by <strong>10,000+</strong> readers</span>
+              </div>
             </div>
 
-            <div class="trust-row" aria-label="Trust and payment indicators">
-              <span>SSL Secure</span>
-              <span>Verified Razorpay Checkout</span>
-              <span>eBook sent by email</span>
+            <!-- Inline credibility strip -->
+            <div class="hero__strip">
+              <div class="hero__strip-item">
+                <span class="hero__strip-num">10k+</span>
+                <span class="hero__strip-label">Readers</span>
+              </div>
+              <div class="hero__strip-item">
+                <span class="hero__strip-num">4.8★</span>
+                <span class="hero__strip-label">Avg. rating</span>
+              </div>
+              <div class="hero__strip-item">
+                <span class="hero__strip-num">8</span>
+                <span class="hero__strip-label">Modules</span>
+              </div>
+              <div class="hero__strip-item">
+                <span class="hero__strip-num">⚡</span>
+                <span class="hero__strip-label">Instant access</span>
+              </div>
             </div>
+
+            <!-- What's inside preview -->
+            <div class="hero__inside glass">
+              <h2 class="hero__inside-title">What's inside the guide</h2>
+              <ul class="hero__inside-list" role="list">
+                <li><span aria-hidden="true">📘</span> 8 step-by-step modules, beginner to confident</li>
+                <li><span aria-hidden="true">🧠</span> The psychology behind attraction &amp; connection</li>
+                <li><span aria-hidden="true">💬</span> Word-for-word conversation frameworks</li>
+                <li><span aria-hidden="true">🕴️</span> Body-language cues that build instant trust</li>
+                <li><span aria-hidden="true">📱</span> Read anywhere — PDF for mobile, tablet &amp; desktop</li>
+              </ul>
+
+              <div class="hero__guarantee">
+                <span class="hero__guarantee-ic" aria-hidden="true">🛡️</span>
+                <p><strong>Risk-free.</strong> Not a fit? Reach out and we'll make it right.</p>
+              </div>
+            </div>
+
+            <figure class="hero__cover-mobile" aria-hidden="true">
+              <img
+                src="assets/master-social-confidence-cover.png"
+                alt=""
+                width="420"
+                height="540"
+                loading="eager"
+              />
+            </figure>
           </div>
 
-          <div class="cover-wrap reveal" aria-label="Master Social Confidence eBook cover preview">
-            <div class="cover-glow"></div>
-            <img
-              class="ebook-cover"
-              alt="Master Social Confidence eBook cover"
-              width="1024"
-              height="1024"
-              src="assets/master-social-confidence-cover.png"
-            />
+          <!-- Right: cover + sticky checkout -->
+          <div class="hero__right">
+            <figure class="hero__cover reveal">
+              <img
+                src="assets/master-social-confidence-cover.png"
+                alt="Master Social Confidence guide cover"
+                width="420"
+                height="540"
+                loading="eager"
+              />
+            </figure>
+
+            <!-- ============ STICKY CHECKOUT CARD ============ -->
+            <aside id="checkout" class="checkout glass reveal" aria-label="Checkout">
+              <div class="checkout__head">
+                <h2 class="checkout__title">Get the Complete Guide</h2>
+                <span class="pill pill--gold">Instant download</span>
+              </div>
+
+              <div class="price">
+                <div class="price__main">
+                  <span class="price__now">₹499</span>
+                  <span class="price__was">₹4,999</span>
+                </div>
+                <span class="price__off">90% OFF</span>
+              </div>
+
+              <form id="purchaseForm" class="checkout__form" novalidate>
+                <div class="field">
+                  <label for="fullName">Full name</label>
+                  <input
+                    type="text"
+                    id="fullName"
+                    name="fullName"
+                    autocomplete="name"
+                    placeholder="Your name"
+                    aria-describedby="err-fullName"
+                    required
+                  />
+                  <p class="field__error" id="err-fullName" data-error-for="fullName" role="alert"></p>
+                </div>
+
+                <div class="field">
+                  <label for="email">Email address</label>
+                  <input
+                    type="email"
+                    id="email"
+                    name="email"
+                    autocomplete="email"
+                    inputmode="email"
+                    placeholder="you@email.com"
+                    aria-describedby="err-email"
+                    required
+                  />
+                  <p class="field__error" id="err-email" data-error-for="email" role="alert"></p>
+                </div>
+
+                <div class="field">
+                  <label for="phone">Phone number</label>
+                  <input
+                    type="tel"
+                    id="phone"
+                    name="phone"
+                    autocomplete="tel"
+                    inputmode="numeric"
+                    maxlength="10"
+                    placeholder="10-digit mobile"
+                    aria-describedby="err-phone"
+                    required
+                  />
+                  <p class="field__error" id="err-phone" data-error-for="phone" role="alert"></p>
+                </div>
+
+                <div class="field field--coupon">
+                  <label for="coupon">Coupon code <span class="muted">(optional)</span></label>
+                  <div class="coupon">
+                    <input
+                      type="text"
+                      id="coupon"
+                      name="coupon"
+                      autocomplete="off"
+                      placeholder="Enter code"
+                      aria-describedby="couponMsg"
+                    />
+                    <button type="button" class="btn btn--ghost btn--sm" id="applyCoupon">Apply</button>
+                  </div>
+                  <p class="field__hint" id="couponMsg" role="status"></p>
+                </div>
+
+                <button type="submit" class="btn btn--primary btn--block checkout-button">
+                  Download Now
+                </button>
+
+                <p class="checkout__secure">
+                  By continuing you agree to receive your guide by email.
+                </p>
+              </form>
+
+              <ul class="trust" role="list">
+                <li><span aria-hidden="true">🔒</span> Secure Payment</li>
+                <li><span aria-hidden="true">⚡</span> Instant Delivery</li>
+                <li><span aria-hidden="true">📱</span> Mobile Friendly</li>
+              </ul>
+            </aside>
           </div>
         </div>
       </section>
 
-      <div class="page-layout section-shell">
-        <div class="content-flow">
-          <section id="benefits" class="section-block" aria-labelledby="benefits-title">
-            <p class="eyebrow reveal">Why most people struggle</p>
-            <h2 id="benefits-title" class="section-title reveal">
-              The problem is not your personality. It is that nobody taught you the skill.
-            </h2>
-            <div class="benefit-grid">
-              <article class="feature-card reveal">
-                <span class="icon">✦</span>
-                <h3>Never Run Blank</h3>
-                <p>Learn how to start conversations, keep them flowing, and stop running out of things to say.</p>
-              </article>
-              <article class="feature-card reveal">
-                <span class="icon">◈</span>
-                <h3>Stop Overthinking</h3>
-                <p>Build practical confidence habits that reduce second-guessing in texts, calls, and real conversations.</p>
-              </article>
-              <article class="feature-card reveal">
-                <span class="icon">◎</span>
-                <h3>Stronger First Impressions</h3>
-                <p>Understand the small signals that make you appear calm, clear, and memorable from the first minute.</p>
-              </article>
-              <article class="feature-card reveal">
-                <span class="icon">▣</span>
-                <h3>Body Language Control</h3>
-                <p>Project confidence through posture, eye contact, movement, and presence without forcing a fake persona.</p>
-              </article>
-              <article class="feature-card reveal">
-                <span class="icon">✧</span>
-                <h3>Social Intelligence</h3>
-                <p>Read rooms better, understand people faster, and respond with more emotional control.</p>
-              </article>
-              <article class="feature-card reveal">
-                <span class="icon">◇</span>
-                <h3>Real Personal Magnetism</h3>
-                <p>Develop storytelling, warmth, discipline, and self-respect so people naturally enjoy your presence.</p>
-              </article>
-            </div>
-          </section>
-
-          <section id="inside" class="section-block" aria-labelledby="inside-title">
-            <p class="eyebrow reveal">Inside the complete program</p>
-            <h2 id="inside-title" class="section-title reveal">
-              A practical system for confidence, communication, and long-term personal growth.
-            </h2>
-            <div class="module-list">
-              <article class="module reveal">
-                <span>01</span>
-                <div>
-                  <h3>Communication Mastery</h3>
-                  <p>Start conversations effortlessly, keep them natural, and become someone people enjoy talking to.</p>
-                </div>
-              </article>
-              <article class="module reveal">
-                <span>02</span>
-                <div>
-                  <h3>Confidence Framework</h3>
-                  <p>Use simple exercises to overcome self-doubt and build genuine confidence through action.</p>
-                </div>
-              </article>
-              <article class="module reveal">
-                <span>03</span>
-                <div>
-                  <h3>Body Language Secrets</h3>
-                  <p>Understand non-verbal communication and project calm confidence before you say a word.</p>
-                </div>
-              </article>
-              <article class="module reveal">
-                <span>04</span>
-                <div>
-                  <h3>Social Intelligence</h3>
-                  <p>Read situations better, understand people faster, and build stronger relationships.</p>
-                </div>
-              </article>
-              <article class="module reveal">
-                <span>05</span>
-                <div>
-                  <h3>Charisma Development</h3>
-                  <p>Develop presence, storytelling skills, and the habits that make people remember you.</p>
-                </div>
-              </article>
-              <article class="module reveal">
-                <span>06</span>
-                <div>
-                  <h3>Personal Growth System</h3>
-                  <p>Build discipline, emotional control, and a stronger mindset for career, dating, and social success.</p>
-                </div>
-              </article>
-            </div>
-          </section>
-
-          <section id="proof" class="section-block" aria-labelledby="proof-title">
-            <p class="eyebrow reveal">Reader results</p>
-            <h2 id="proof-title" class="section-title reveal">
-              For students, professionals, introverts, entrepreneurs, and anyone ready to communicate better.
-            </h2>
-            <div class="testimonial-grid">
-              <article class="testimonial reveal">
-                <img
-                  alt="Portrait of Aarav Sharma"
-                  width="96"
-                  height="96"
-                  src="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 96 96'%3E%3Crect width='96' height='96' rx='48' fill='%23f59e0b'/%3E%3Ccircle cx='48' cy='36' r='18' fill='%23fff7ed'/%3E%3Cpath d='M18 88c5-24 20-36 30-36s25 12 30 36' fill='%23101828' fill-opacity='.72'/%3E%3C/svg%3E"
-                />
-                <p>“I finally understood why I kept overthinking. The exercises made conversations feel much easier.”</p>
-                <strong>Aarav Sharma</strong>
-                <span>Student</span>
-              </article>
-              <article class="testimonial reveal">
-                <img
-                  alt="Portrait of Riya Mehta"
-                  width="96"
-                  height="96"
-                  src="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 96 96'%3E%3Crect width='96' height='96' rx='48' fill='%2325526f'/%3E%3Ccircle cx='48' cy='35' r='17' fill='%23e0f2fe'/%3E%3Cpath d='M17 88c6-22 19-35 31-35s25 13 31 35' fill='%23f8fafc' fill-opacity='.86'/%3E%3C/svg%3E"
-                />
-                <p>“The body language and first impression sections helped me show up better at work meetings.”</p>
-                <strong>Riya Mehta</strong>
-                <span>Young professional</span>
-              </article>
-              <article class="testimonial reveal">
-                <img
-                  alt="Portrait of Kabir Malhotra"
-                  width="96"
-                  height="96"
-                  src="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 96 96'%3E%3Crect width='96' height='96' rx='48' fill='%2314b8a6'/%3E%3Ccircle cx='48' cy='36' r='18' fill='%23ecfeff'/%3E%3Cpath d='M18 88c5-24 20-36 30-36s25 12 30 36' fill='%23101828' fill-opacity='.68'/%3E%3C/svg%3E"
-                />
-                <p>“It gave me a structure for networking without acting fake. That was the biggest win.”</p>
-                <strong>Kabir Malhotra</strong>
-                <span>Entrepreneur</span>
-              </article>
-            </div>
-          </section>
-
-          <section id="faq" class="section-block" aria-labelledby="faq-title">
-            <p class="eyebrow reveal">Questions</p>
-            <h2 id="faq-title" class="section-title reveal">Everything you may want to know before getting access.</h2>
-            <div class="faq-list">
-              <div class="faq-item reveal">
-                <button class="faq-question" type="button" aria-expanded="false">
-                  Who is this program for?
-                  <span aria-hidden="true">+</span>
-                </button>
-                <div class="faq-answer">
-                  <p>It is for students, young professionals, entrepreneurs, introverts, and anyone who wants stronger confidence, communication, and social skills.</p>
-                </div>
-              </div>
-              <div class="faq-item reveal">
-                <button class="faq-question" type="button" aria-expanded="false">
-                  Will this help if I am introverted?
-                  <span aria-hidden="true">+</span>
-                </button>
-                <div class="faq-answer">
-                  <p>Yes. The goal is not to become loud or fake. The program helps you communicate with more ease, presence, and self-trust.</p>
-                </div>
-              </div>
-              <div class="faq-item reveal">
-                <button class="faq-question" type="button" aria-expanded="false">
-                  How will I receive the eBook?
-                  <span aria-hidden="true">+</span>
-                </button>
-                <div class="faq-answer">
-                  <p>After your payment is verified securely, the eBook download link and receipt are sent to your email automatically.</p>
-                </div>
-              </div>
-              <div class="faq-item reveal">
-                <button class="faq-question" type="button" aria-expanded="false">
-                  Is the payment secure?
-                  <span aria-hidden="true">+</span>
-                </button>
-                <div class="faq-answer">
-                  <p>Yes. Checkout runs through Razorpay, and payment is verified on the backend before access is confirmed.</p>
-                </div>
-              </div>
-            </div>
-          </section>
+      <!-- ============ SOCIAL PROOF STATS ============ -->
+      <section class="stats" aria-label="Social proof">
+        <div class="container stats__grid reveal">
+          <div class="stat glass">
+            <span class="stat__num" data-count="10000" data-suffix="+">0</span>
+            <span class="stat__label">Downloads</span>
+          </div>
+          <div class="stat glass">
+            <span class="stat__num">4.8<span class="stat__small">/5</span></span>
+            <span class="stat__label">Average Rating</span>
+          </div>
+          <div class="stat glass">
+            <span class="stat__num" data-count="87" data-suffix="%">0</span>
+            <span class="stat__label">Completion Rate</span>
+          </div>
         </div>
 
-        <aside id="purchase" class="purchase-column" aria-labelledby="purchase-title">
-          <form class="purchase-card reveal" id="purchaseForm" novalidate>
-            <p class="eyebrow">Secure checkout</p>
-            <h2 id="purchase-title">Start your transformation</h2>
-            <div class="price-row">
-              <span class="price">₹499</span>
-              <span class="old-price">₹1,999</span>
+        <!-- Review cards -->
+        <div class="container reviews reveal">
+          <article class="review glass">
+            <span class="stars" aria-hidden="true">★★★★★</span>
+            <p>"This guide completely changed how I communicate with people."</p>
+            <footer class="review__by">— Rahul S.</footer>
+          </article>
+          <article class="review glass">
+            <span class="stars" aria-hidden="true">★★★★★</span>
+            <p>"Finally stopped overthinking conversations. The frameworks just work."</p>
+            <footer class="review__by">— Aditi M.</footer>
+          </article>
+          <article class="review glass">
+            <span class="stars" aria-hidden="true">★★★★★</span>
+            <p>"Practical, no fluff. My confidence in social settings is night and day."</p>
+            <footer class="review__by">— Karan V.</footer>
+          </article>
+        </div>
+      </section>
+
+      <!-- ============ WHAT YOU'LL LEARN ============ -->
+      <section id="learn" class="section" aria-labelledby="learn-title">
+        <div class="container">
+          <header class="section__head reveal">
+            <span class="eyebrow">The Curriculum</span>
+            <h2 id="learn-title" class="section__title">What You'll Learn</h2>
+            <p class="section__lead">Eight focused modules that take you from overthinking to effortless connection.</p>
+          </header>
+
+          <div class="learn-grid reveal">
+            <article class="icon-card glass">
+              <span class="icon-card__ic" aria-hidden="true">💪</span>
+              <h3>Confidence Building</h3>
+              <p>Rewire self-doubt into steady, grounded self-assurance.</p>
+            </article>
+            <article class="icon-card glass">
+              <span class="icon-card__ic" aria-hidden="true">💬</span>
+              <h3>Conversation Skills</h3>
+              <p>Start, hold, and deepen conversations with anyone.</p>
+            </article>
+            <article class="icon-card glass">
+              <span class="icon-card__ic" aria-hidden="true">🧠</span>
+              <h3>Psychology Basics</h3>
+              <p>The mental models behind how people connect.</p>
+            </article>
+            <article class="icon-card glass">
+              <span class="icon-card__ic" aria-hidden="true">❤️</span>
+              <h3>Emotional Intelligence</h3>
+              <p>Read emotions and respond with empathy and control.</p>
+            </article>
+            <article class="icon-card glass">
+              <span class="icon-card__ic" aria-hidden="true">🕴️</span>
+              <h3>Body Language</h3>
+              <p>Communicate confidence before you say a word.</p>
+            </article>
+            <article class="icon-card glass">
+              <span class="icon-card__ic" aria-hidden="true">✨</span>
+              <h3>First Impression Techniques</h3>
+              <p>Be memorable in the first 30 seconds.</p>
+            </article>
+            <article class="icon-card glass">
+              <span class="icon-card__ic" aria-hidden="true">🧩</span>
+              <h3>Communication Frameworks</h3>
+              <p>Repeatable structures for any social situation.</p>
+            </article>
+            <article class="icon-card glass">
+              <span class="icon-card__ic" aria-hidden="true">🤝</span>
+              <h3>Relationship Skills</h3>
+              <p>Build trust and lasting bonds that matter.</p>
+            </article>
+          </div>
+        </div>
+      </section>
+
+      <!-- ============ TRANSFORMATION ============ -->
+      <section class="section section--alt" aria-labelledby="trans-title">
+        <div class="container">
+          <header class="section__head reveal">
+            <span class="eyebrow">Your Transformation</span>
+            <h2 id="trans-title" class="section__title">Before &amp; After</h2>
+          </header>
+
+          <div class="transform reveal">
+            <article class="transform__col transform__col--before glass">
+              <h3>Before</h3>
+              <ul role="list">
+                <li><span aria-hidden="true">❌</span> Overthinking conversations</li>
+                <li><span aria-hidden="true">❌</span> Low confidence</li>
+                <li><span aria-hidden="true">❌</span> Social anxiety</li>
+                <li><span aria-hidden="true">❌</span> Poor communication</li>
+              </ul>
+            </article>
+
+            <div class="transform__arrow" aria-hidden="true">→</div>
+
+            <article class="transform__col transform__col--after glass">
+              <h3>After</h3>
+              <ul role="list">
+                <li><span aria-hidden="true">✅</span> Better communication</li>
+                <li><span aria-hidden="true">✅</span> More confidence</li>
+                <li><span aria-hidden="true">✅</span> Stronger social skills</li>
+                <li><span aria-hidden="true">✅</span> Better relationships</li>
+              </ul>
+            </article>
+          </div>
+        </div>
+      </section>
+
+      <!-- ============ WHY THIS GUIDE WORKS ============ -->
+      <section class="section" aria-labelledby="why-title">
+        <div class="container">
+          <header class="section__head reveal">
+            <span class="eyebrow">Why It Works</span>
+            <h2 id="why-title" class="section__title">Why This Guide Works</h2>
+          </header>
+
+          <div class="feature-grid reveal">
+            <article class="feature glass">
+              <span class="feature__num">01</span>
+              <h3>Practical Frameworks</h3>
+              <p>Actionable techniques you can use immediately — no theory dumps.</p>
+            </article>
+            <article class="feature glass">
+              <span class="feature__num">02</span>
+              <h3>Step-by-Step Learning</h3>
+              <p>Beginner-friendly progression that builds skill on skill.</p>
+            </article>
+            <article class="feature glass">
+              <span class="feature__num">03</span>
+              <h3>Real Examples</h3>
+              <p>Actual conversation examples and real-world scenarios.</p>
+            </article>
+            <article class="feature glass">
+              <span class="feature__num">04</span>
+              <h3>Psychological Insights</h3>
+              <p>Understand why people behave the way they do.</p>
+            </article>
+          </div>
+        </div>
+      </section>
+
+      <!-- ============ TESTIMONIALS CAROUSEL ============ -->
+      <section id="proof" class="section section--alt" aria-labelledby="testi-title">
+        <div class="container">
+          <header class="section__head reveal">
+            <span class="eyebrow">Real Readers</span>
+            <h2 id="testi-title" class="section__title">Loved by 10,000+ Readers</h2>
+          </header>
+
+          <div class="carousel reveal" data-carousel>
+            <div class="carousel__track" data-carousel-track>
+              <article class="testi glass" data-slide>
+                <div class="testi__top">
+                  <span class="avatar" aria-hidden="true">A</span>
+                  <div>
+                    <strong>Arjun Mehta</strong>
+                    <span class="testi__role">Software Engineer</span>
+                  </div>
+                </div>
+                <span class="stars" aria-hidden="true">★★★★★</span>
+                <p>"I used to dread networking events. Now I actually look forward to them. The frameworks are gold."</p>
+              </article>
+
+              <article class="testi glass" data-slide>
+                <div class="testi__top">
+                  <span class="avatar" aria-hidden="true">S</span>
+                  <div>
+                    <strong>Sneha Reddy</strong>
+                    <span class="testi__role">Marketing Manager</span>
+                  </div>
+                </div>
+                <span class="stars" aria-hidden="true">★★★★★</span>
+                <p>"The body language chapter alone was worth it. People respond to me completely differently now."</p>
+              </article>
+
+              <article class="testi glass" data-slide>
+                <div class="testi__top">
+                  <span class="avatar" aria-hidden="true">V</span>
+                  <div>
+                    <strong>Vikram Singh</strong>
+                    <span class="testi__role">Entrepreneur</span>
+                  </div>
+                </div>
+                <span class="stars" aria-hidden="true">★★★★★</span>
+                <p>"Clear, practical, and genuinely useful. My confidence in meetings has transformed."</p>
+              </article>
+
+              <article class="testi glass" data-slide>
+                <div class="testi__top">
+                  <span class="avatar" aria-hidden="true">P</span>
+                  <div>
+                    <strong>Priya Nair</strong>
+                    <span class="testi__role">Student</span>
+                  </div>
+                </div>
+                <span class="stars" aria-hidden="true">★★★★★</span>
+                <p>"As an introvert this didn't ask me to fake it. It gave me real tools that fit who I am."</p>
+              </article>
             </div>
-            <p class="purchase-note">Instant access after verified payment. Your eBook will be sent by email.</p>
 
-            <label for="fullName">Full Name</label>
-            <input id="fullName" name="fullName" type="text" autocomplete="name" placeholder="Your name" required />
-            <small class="field-error" data-error-for="fullName"></small>
+            <div class="carousel__nav">
+              <button class="carousel__btn" data-carousel-prev aria-label="Previous testimonial">‹</button>
+              <div class="carousel__dots" data-carousel-dots aria-hidden="true"></div>
+              <button class="carousel__btn" data-carousel-next aria-label="Next testimonial">›</button>
+            </div>
+          </div>
+        </div>
+      </section>
 
-            <label for="email">Email Address</label>
-            <input id="email" name="email" type="email" autocomplete="email" placeholder="you@example.com" required />
-            <small class="field-error" data-error-for="email"></small>
+      <!-- ============ FAQ ============ -->
+      <section id="faq" class="section" aria-labelledby="faq-title">
+        <div class="container container--narrow">
+          <header class="section__head reveal">
+            <span class="eyebrow">Questions</span>
+            <h2 id="faq-title" class="section__title">Frequently Asked</h2>
+          </header>
 
-            <label for="phone">Phone Number</label>
-            <input id="phone" name="phone" type="tel" autocomplete="tel" placeholder="9876543210" required />
-            <small class="field-error" data-error-for="phone"></small>
+          <div class="faq reveal">
+            <div class="faq-item glass">
+              <button class="faq-question" aria-expanded="false">
+                <span>Who is this guide for?</span>
+                <span class="faq-icon" aria-hidden="true">+</span>
+              </button>
+              <div class="faq-answer">
+                <p>Anyone who wants stronger communication, more confidence, and better relationships — whether you're shy, an introvert, or just looking to level up your social skills.</p>
+              </div>
+            </div>
 
-            <button class="button primary checkout-button" type="submit">Pay securely with Razorpay</button>
-            <p class="secure-line">Encrypted checkout · Cards · UPI · Wallets · Netbanking</p>
-          </form>
-        </aside>
-      </div>
+            <div class="faq-item glass">
+              <button class="faq-question" aria-expanded="false">
+                <span>Is this beginner friendly?</span>
+                <span class="faq-icon" aria-hidden="true">+</span>
+              </button>
+              <div class="faq-answer">
+                <p>Yes. It starts from the fundamentals and progresses step by step, so no prior experience is needed.</p>
+              </div>
+            </div>
+
+            <div class="faq-item glass">
+              <button class="faq-question" aria-expanded="false">
+                <span>How will I receive access?</span>
+                <span class="faq-icon" aria-hidden="true">+</span>
+              </button>
+              <div class="faq-answer">
+                <p>Instantly. The moment your payment is confirmed, the guide is emailed to the address you provide at checkout.</p>
+              </div>
+            </div>
+
+            <div class="faq-item glass">
+              <button class="faq-question" aria-expanded="false">
+                <span>Can I read it on mobile?</span>
+                <span class="faq-icon" aria-hidden="true">+</span>
+              </button>
+              <div class="faq-answer">
+                <p>Absolutely. It's a downloadable PDF that reads beautifully on phones, tablets, laptops, and e-readers.</p>
+              </div>
+            </div>
+
+            <div class="faq-item glass">
+              <button class="faq-question" aria-expanded="false">
+                <span>Is there a refund policy?</span>
+                <span class="faq-icon" aria-hidden="true">+</span>
+              </button>
+              <div class="faq-answer">
+                <p>If the guide isn't a fit for you, reach out and we'll make it right. Your satisfaction matters to us.</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- ============ FINAL CTA ============ -->
+      <section class="final-cta" aria-labelledby="final-title">
+        <div class="final-cta__glow" aria-hidden="true"></div>
+        <div class="container final-cta__inner reveal">
+          <h2 id="final-title">Start Improving Your Communication Skills Today</h2>
+          <p>Instant access. Lifetime availability.</p>
+          <a href="#checkout" class="btn btn--primary btn--lg">Download Now</a>
+          <ul class="trust trust--center" role="list">
+            <li><span aria-hidden="true">🔒</span> Secure Payment</li>
+            <li><span aria-hidden="true">⚡</span> Instant Delivery</li>
+            <li><span aria-hidden="true">📱</span> Mobile Friendly</li>
+          </ul>
+        </div>
+      </section>
     </main>
 
-    <footer class="footer section-shell">
-      <p>© 2026 Master Social Confidence. Secure digital eBook checkout.</p>
+    <footer class="site-footer">
+      <div class="container site-footer__inner">
+        <span class="brand__name">Master Social Confidence</span>
+        <p class="muted">© <span id="year">2026</span> Master Social Confidence. All rights reserved.</p>
+      </div>
     </footer>
 
-    <script src="https://checkout.razorpay.com/v1/checkout.js"></script>
-    <script src="script.js"></script>
+    <!-- ============ STICKY MOBILE CTA ============ -->
+    <div class="mobile-bar" id="mobileBar" aria-hidden="false">
+      <div class="mobile-bar__price">
+        <span class="mobile-bar__now">₹499</span>
+        <span class="mobile-bar__was">₹4,999</span>
+      </div>
+      <a href="#checkout" class="btn btn--primary mobile-bar__cta">Get Instant Access</a>
+    </div>
+
+    <script src="https://checkout.razorpay.com/v1/checkout.js" defer></script>
+    <script src="script.js" defer></script>
   </body>
 </html>
